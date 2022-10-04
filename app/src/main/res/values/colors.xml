@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#2cabe3</color>
+    <color name="colorPrimaryDark">#2591c1</color>
+    <color name="colorAccent">#357799</color>
+
+
+
+    <color name="white">#ffffff</color>
+    <color name="white_50">#efeeee</color>
+
+
+    <color name="gray">#bfbebe</color>
+    <color name="gray_dark">#9c9b9b</color>
+    <color name="black">#000000</color>
+    <color name="black_80">#e9212121</color>
+    <color name="black_60">#f3414141</color>
+
+    <color name="light_blue">#2cabe3</color>
+    <color name="table_bg">#bfcde7f2</color>
+    <color name="popup_bg">#bf36738c</color>
+
+    <color name="transparnt">#00f4f1f1</color>
+
+    <color name="red">#d1031b</color>
+
+
+
+    <array name="mdcolor_400">
+        <item name="red_400" type="color">#e84e40</item>
+        <item name="pink_400" type="color">#ec407a</item>
+        <item name="purple_400" type="color">#ab47bc</item>
+        <item name="deep_purple_400" type="color">#7e57c2</item>
+        <item name="indigo_400" type="color">#5c6bc0</item>
+        <item name="blue_400" type="color">#738ffe</item>
+        <item name="light_blue_400" type="color">#29b6f6</item>
+        <item name="cyan_400" type="color">#26c6da</item>
+        <item name="teal_400" type="color">#26a69a</item>
+        <item name="green_400" type="color">#2baf2b</item>
+        <item name="light_green_400" type="color">#9ccc65</item>
+        <item name="lime_400" type="color">#d4e157</item>
+        <item name="yellow_400" type="color">#ffee58</item>
+        <item name="orange_400" type="color">#ffa726</item>
+        <item name="deep_orange_400" type="color">#ff7043</item>
+        <item name="brown_400" type="color">#8d6e63</item>
+        <item name="grey_400" type="color">#bdbdbd</item>
+        <item name="blue_grey_400" type="color">#78909c</item>
+    </array>
+
+<color name="transparent_black">#44000000</color>
+</resources>

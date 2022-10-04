@@ -1,0 +1,206 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    >
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="@dimen/_30sdp"
+            android:scaleType="fitStart"
+            android:src="@drawable/bg_arrow" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <include layout="@layout/toolbar" />
+
+
+            <!-- <androidx.recyclerview.widget.RecyclerView
+                 android:id="@+id/recyclerview_manu"
+                 android:layout_width="match_parent"
+                 android:layout_height="match_parent"
+                 />-->
+
+
+            <LinearLayout
+                android:layout_marginTop="@dimen/_8sdp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="4">
+
+
+                    <ImageView
+                        android:translationZ="@dimen/elevation"
+                        android:elevation="@dimen/elevation"
+                        android:id="@+id/img_manu1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:paddingLeft="@dimen/_5sdp"
+                        android:paddingRight="@dimen/_5sdp"
+                        android:src="@drawable/manu1" />
+
+
+                    <ImageView
+                        android:translationZ="@dimen/elevation"
+                        android:elevation="@dimen/elevation"
+                        android:id="@+id/img_manu2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:paddingLeft="@dimen/_5sdp"
+                        android:paddingRight="@dimen/_5sdp"
+                        android:src="@drawable/manu2" />
+
+                    <ImageView
+                        android:translationZ="@dimen/elevation"
+                        android:elevation="@dimen/elevation"
+                        android:id="@+id/img_man3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:paddingLeft="@dimen/_5sdp"
+                        android:paddingRight="@dimen/_5sdp"
+                        android:src="@drawable/manu3" />
+
+
+                    <ImageView
+                        android:translationZ="@dimen/elevation"
+                        android:elevation="@dimen/elevation"
+                        android:id="@+id/img_manu4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:paddingLeft="@dimen/_5sdp"
+                        android:paddingRight="@dimen/_5sdp"
+                        android:src="@drawable/manu4" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:orientation="horizontal"
+                    android:weightSum="4">
+
+
+                    <ImageView
+                        android:translationZ="@dimen/elevation"
+                        android:elevation="@dimen/elevation"
+                        android:id="@+id/img_manu5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:paddingLeft="@dimen/_5sdp"
+                        android:paddingRight="@dimen/_5sdp"
+                        android:src="@drawable/manu5" />
+
+                    <ImageView
+                        android:translationZ="@dimen/elevation"
+                        android:elevation="@dimen/elevation"
+                        android:id="@+id/img_man6"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:paddingLeft="@dimen/_5sdp"
+                        android:paddingRight="@dimen/_5sdp"
+                        android:src="@drawable/manu6" />
+
+                    <ImageView
+                        android:translationZ="@dimen/elevation"
+                        android:elevation="@dimen/elevation"
+                        android:id="@+id/img_man7"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:paddingLeft="@dimen/_5sdp"
+                        android:paddingRight="@dimen/_5sdp"
+                        android:src="@drawable/manu7" />
+
+                    <ImageView
+                        android:translationZ="@dimen/elevation"
+                        android:elevation="@dimen/elevation"
+                        android:id="@+id/img_manu9"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:paddingLeft="@dimen/_5sdp"
+                        android:paddingRight="@dimen/_5sdp"
+                        android:src="@drawable/manu9" />
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:orientation="horizontal"
+                    android:weightSum="4"
+
+                    >
+
+                    <ImageView
+                        android:translationZ="@dimen/elevation"
+                        android:elevation="@dimen/elevation"
+                        android:id="@+id/img_manu10"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:paddingLeft="@dimen/_5sdp"
+                        android:paddingRight="@dimen/_5sdp"
+                        android:src="@drawable/manu10" />
+
+                    <ImageView
+                        android:translationZ="@dimen/elevation"
+                        android:elevation="@dimen/elevation"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+
+                    <ImageView
+                        android:translationZ="@dimen/elevation"
+                        android:elevation="@dimen/elevation"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+
+
+                    <ImageView
+                        android:translationZ="@dimen/elevation"
+                        android:elevation="@dimen/elevation"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

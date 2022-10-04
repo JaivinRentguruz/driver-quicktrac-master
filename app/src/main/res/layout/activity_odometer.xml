@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    >
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/bg_arrow"
+        android:layout_marginRight="@dimen/_30sdp"
+        android:scaleType="fitStart"
+        />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <include layout="@layout/toolbar_with_image"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:translationZ="8dp"
+                    android:elevation="8dp"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitCenter"
+                    android:id="@+id/img_back_to"
+                    android:layout_width="@dimen/_20sdp"
+                    android:layout_height="@dimen/_20sdp"
+                    android:src="@drawable/ic_back_arrow"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="@dimen/_8sdp"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/_45sdp"
+                android:paddingRight="@dimen/_45sdp">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Verify your truck"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center"
+                    android:textSize="@dimen/_18sdp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="15dp"/>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_50sdp"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:src="@drawable/odometer_icon" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:id="@+id/txt_trackName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/titilliumweb_regular"
+                        android:gravity="center"
+                        android:padding="@dimen/_10sdp"
+
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_22ssp" />
+
+
+                    <androidx.appcompat.widget.AppCompatEditText
+                        android:translationZ="@dimen/elevation"
+                        android:elevation="@dimen/elevation"
+                        android:id="@+id/edit_odometerreading"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_35sdp"
+                        android:background="@drawable/login_button"
+                        android:drawableLeft="@drawable/odometer_icon_2"
+                        android:drawablePadding="@dimen/_10sdp"
+                        android:fontFamily="@font/titilliumweb_regular"
+                        android:hint="Odometer Reading"
+                        android:inputType="number"
+                        android:paddingLeft="@dimen/_20sdp"
+                        android:paddingRight="@dimen/_20sdp"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textColorHint="@color/colorPrimary"
+                        android:textSize="@dimen/_14sdp" />
+
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:translationZ="@dimen/elevation"
+                        android:elevation="@dimen/elevation"
+                        android:id="@+id/btn_verify"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_35sdp"
+                        android:layout_marginTop="@dimen/_20sdp"
+                        android:background="@drawable/login_button"
+                        android:clickable="true"
+                        android:fontFamily="@font/titilliumweb_bolditalic"
+                        android:text="VERIFY"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="@dimen/_18ssp" />
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+</RelativeLayout>

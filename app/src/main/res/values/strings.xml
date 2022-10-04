@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="crash_toast_text" translatable="false">Something went wrong...</string>
+    <string name="app_name" translatable="false">QuickTrac</string>
+    <string name="pleasewait" translatable="false">Please wait</string>
+    <string name="toast_nointernet" translatable="false">No Internet Available</string>
+
+
+    <string name="areyousureexit" translatable="false">Are you sure want to exit?</string>
+    <string name="wanttogohome" translatable="false">Are you sure want to go to main menu?</string>
+    <string name="location_updated" translatable="false">Location Updated: %1$s</string>
+
+    <string name="unknown_location" translatable="false">Unknown location</string>
+
+    <string name="batched_location_updates" translatable="false">Batched location updates</string>
+
+    <plurals name="num_locations_reported">
+        <item quantity="zero">No location reported</item>
+        <item quantity="one">One location reported</item>
+        <item quantity="other">%d locations reported</item>
+    </plurals>
+    <string name="title_activity_temp_maps" translatable="false">Map</string>
+    <string name="neverback" translatable="false">You are not allow to go back</string>
+
+    <string name="menu_title_pickup" translatable="false">Pick up from depo</string>
+    <string name="menu_title_deliver" translatable="false">Deliver to depo</string>
+    <string name="title_pick_up_from_depo" translatable="false">Pickup From Depo</string>
+    <string name="title_pick_up_from_depo_test" translatable="false">Pickup From Depo</string>
+
+    <string name="file_p" translatable="false">com.quicktrack.fileprovider</string>
+    <string name="txt_next" translatable="false">Next</string>
+
+    <item name="fab_delivery_to_depo" type="id" />
+    <item name="fab_log_out" type="id" />
+    <item name="fab_multiple_job" type="id" />
+    <item name="fab_futile" type="id" />
+    <item name="fab_delay" type="id" />
+    <item name="fab_take_me_pick_up" type="id" />
+
+<string name="txt_your_break_is_over" translatable="false">Your Break Time is over</string>
+    <string name="not_allow_back" translatable="false">You are not allow to go back</string>
+</resources>

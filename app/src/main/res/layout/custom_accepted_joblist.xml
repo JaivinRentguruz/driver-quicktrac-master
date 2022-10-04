@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:padding="4dp"
+    android:translationZ="@dimen/elevation"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="@dimen/elevation"
+    app:cardUseCompatPadding="true">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_3sdp"
+        android:background="@drawable/background_list_row"
+        android:orientation="vertical">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/item_view_height_header"
+            android:background="@drawable/background_rounded_black">
+
+            <TextView
+                android:id="@+id/txt_count"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:fontFamily="@font/titilliumweb_regular"
+                android:padding="@dimen/_3sdp"
+                android:text="0"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_10ssp"
+                android:visibility="visible"
+                android:gravity="center" />
+
+            <TextView
+                android:id="@+id/txt_jobtype"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true"
+                android:fontFamily="@font/titilliumweb_regular"
+                android:padding="@dimen/_3sdp"
+                android:text="0"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_10ssp"
+                android:visibility="visible"
+                android:gravity="center" />
+
+
+            <TextView
+                android:id="@+id/txt_jobId"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:fontFamily="@font/titilliumweb_regular"
+                android:padding="@dimen/_3sdp"
+                android:text="JOB ID:4030 "
+                android:textColor="@color/white"
+                android:textSize="@dimen/_12ssp"
+                android:gravity="center" />
+
+
+        </RelativeLayout>
+
+
+        <TextView
+            android:id="@+id/txt_note"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/table_bg"
+            android:padding="@dimen/_2sdp"
+            android:text="you are not allowed before complete pickup "
+            android:textColor="@color/red"
+            android:textSize="@dimen/_8ssp"
+            android:visibility="gone" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1.3"
+                android:fontFamily="@font/titilliumweb_bold"
+                android:padding="@dimen/_2sdp"
+                android:text="CLIENT NAME:"
+                android:textColor="@color/black_80"
+                android:textSize="@dimen/_10ssp" />
+
+            <TextView
+                android:id="@+id/txt_clientName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_weight="0.7"
+                android:fontFamily="@font/titilliumweb_bold"
+                android:padding="@dimen/_2sdp"
+                android:textColor="@color/black_80"
+                android:textSize="@dimen/_10ssp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <TextView
+                android:id="@+id/txt_collection_label"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1.3"
+                android:fontFamily="@font/titilliumweb_bold"
+                android:padding="@dimen/_2sdp"
+                android:text="COLLECTION COMPANY:"
+                android:textColor="@color/black_80"
+                android:textSize="@dimen/_10ssp" />
+
+            <TextView
+                android:id="@+id/txt_collection"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_weight="0.7"
+                android:fontFamily="@font/titilliumweb_bold"
+                android:padding="@dimen/_2sdp"
+                android:textColor="@color/black_80"
+                android:textSize="@dimen/_10ssp" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/lay_pickupAddres"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1.3"
+                android:fontFamily="@font/titilliumweb_bold"
+                android:padding="@dimen/_2sdp"
+                android:text="PICKUP ADDRESS:"
+                android:textColor="@color/black_80"
+                android:textSize="@dimen/_10ssp" />
+
+            <TextView
+                android:id="@+id/txt_pickupAddres"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_weight="0.7"
+                android:fontFamily="@font/titilliumweb_bold"
+                android:padding="@dimen/_2sdp"
+                android:textColor="@color/black_80"
+                android:textSize="@dimen/_10ssp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lay_deliveryAddres"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1.3"
+                android:fontFamily="@font/titilliumweb_bold"
+                android:padding="@dimen/_2sdp"
+                android:text="DELIVERY ADDRESS:"
+                android:textColor="@color/black_80"
+                android:textSize="@dimen/_10ssp" />
+
+            <TextView
+                android:id="@+id/txt_deliveryAddres"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.7"
+                android:fontFamily="@font/titilliumweb_bold"
+                android:padding="@dimen/_2sdp"
+                android:text="ABC ADDRESS"
+                android:textColor="@color/black_80"
+                android:textSize="@dimen/_10ssp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1.3"
+                android:fontFamily="@font/titilliumweb_bold"
+                android:padding="@dimen/_2sdp"
+                android:text="COMMENTS:"
+                android:textColor="@color/black_80"
+                android:textSize="@dimen/_10ssp" />
+
+            <TextView
+                android:id="@+id/txt_comment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.7"
+                android:fontFamily="@font/titilliumweb_bold"
+                android:padding="@dimen/_2sdp"
+                android:text="TEST"
+                android:textColor="@color/black_80"
+                android:textSize="@dimen/_10ssp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <TextView
+                android:id="@+id/delivery_type"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1.3"
+                android:background="@drawable/txtview_back_orange"
+                android:fontFamily="@font/titilliumweb_bold"
+                android:gravity="center"
+                android:padding="@dimen/_2sdp"
+                android:text="Hurricane"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_10ssp"
+                android:visibility="invisible" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.7"
+                android:gravity="right"
+                android:padding="@dimen/_2sdp">
+
+
+                <Button
+                    android:id="@+id/btn_startJob"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/txt_btn_item_view_height"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:background="@drawable/btn_shape_black"
+                    android:fontFamily="@font/titilliumweb_bold"
+                    android:paddingLeft="@dimen/_5sdp"
+                    android:paddingRight="@dimen/_5sdp"
+                    android:paddingBottom="@dimen/_1sdp"
+                    android:text="Start job"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_10ssp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>

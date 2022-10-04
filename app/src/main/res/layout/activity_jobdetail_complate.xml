@@ -1,0 +1,469 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+<ImageView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:src="@drawable/main_bg"
+    android:scaleType="fitXY"
+    />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+    <include layout="@layout/toolbar"/>
+
+
+
+<FrameLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="top"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/_20sdp"
+        android:paddingRight="@dimen/_20sdp"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/titilliumweb_bolditalic"
+            android:gravity="center"
+            android:text="JOB Summary"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_8ssp"
+            android:textAllCaps="true"
+            />
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true"
+            >
+        <LinearLayout
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Name"
+                android:background="@drawable/border_table_shape_blue"
+                android:layout_weight="1.3"
+                android:padding="@dimen/_5sdp"
+                android:textColor="@color/black_80"
+                android:textSize="@dimen/_10ssp"
+                android:textAllCaps="true"
+                android:fontFamily="@font/titilliumweb_bold"
+                />
+
+            <TextView
+                android:id="@+id/txt_identifier"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.7"
+                android:background="@drawable/border_table_shape_blue"
+                android:fontFamily="@font/titilliumweb_bold"
+                android:padding="@dimen/_5sdp"
+                android:text="--"
+                android:textColor="@color/black_80"
+                android:textSize="@dimen/_10ssp" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1.3"
+                android:background="@drawable/border_table_shape_blue"
+                android:fontFamily="@font/titilliumweb_bold"
+                android:padding="@dimen/_5sdp"
+                android:text="PICKUP ADDRESS"
+                android:textColor="@color/black_80"
+                android:textSize="@dimen/_10ssp" />
+
+            <TextView
+                android:id="@+id/txt_pickupAddres"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.7"
+                android:background="@drawable/border_table_shape_blue"
+                android:fontFamily="@font/titilliumweb_bold"
+                android:padding="@dimen/_5sdp"
+                android:text="--"
+                android:textColor="@color/black_80"
+                android:textSize="@dimen/_10ssp" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1.3"
+                android:background="@drawable/border_table_shape_blue"
+                android:fontFamily="@font/titilliumweb_bold"
+                android:padding="@dimen/_5sdp"
+                android:text="DELIVERY ADDRESS"
+                android:textColor="@color/black_80"
+                android:textSize="@dimen/_10ssp" />
+
+            <TextView
+                android:id="@+id/txt_deliveryAddres"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.7"
+                android:background="@drawable/border_table_shape_blue"
+                android:fontFamily="@font/titilliumweb_bold"
+                android:padding="@dimen/_5sdp"
+                android:text="--"
+                android:textColor="@color/black_80"
+                android:textSize="@dimen/_10ssp" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1.3"
+                android:background="@drawable/border_table_shape_blue"
+                android:fontFamily="@font/titilliumweb_bold"
+                android:padding="@dimen/_5sdp"
+                android:text="WEIGHT"
+                android:textColor="@color/black_80"
+                android:textSize="@dimen/_10ssp" />
+
+            <TextView
+                android:id="@+id/txt_weight"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.7"
+                android:background="@drawable/border_table_shape_blue"
+                android:fontFamily="@font/titilliumweb_bold"
+                android:padding="@dimen/_5sdp"
+                android:text="--"
+                android:textColor="@color/black_80"
+                android:textSize="@dimen/_10ssp" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1.3"
+                android:background="@drawable/border_table_shape_blue"
+                android:fontFamily="@font/titilliumweb_bold"
+                android:padding="@dimen/_5sdp"
+                android:text="QUANTITY"
+                android:textColor="@color/black_80"
+                android:textSize="@dimen/_10ssp" />
+
+            <TextView
+                android:id="@+id/txt_quntity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.7"
+                android:background="@drawable/border_table_shape_blue"
+                android:fontFamily="@font/titilliumweb_bold"
+                android:padding="@dimen/_5sdp"
+                android:text="--"
+                android:textColor="@color/black_80"
+                android:textSize="@dimen/_10ssp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1.3"
+                android:background="@drawable/border_table_shape_blue"
+                android:fontFamily="@font/titilliumweb_bold"
+                android:padding="@dimen/_5sdp"
+                android:text="distance"
+                android:textAllCaps="true"
+                android:textColor="@color/black_80"
+                android:textSize="@dimen/_10ssp" />
+
+            <TextView
+                android:id="@+id/txt_distance"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.7"
+                android:background="@drawable/border_table_shape_blue"
+                android:fontFamily="@font/titilliumweb_bold"
+                android:padding="@dimen/_5sdp"
+                android:text="--"
+                android:textColor="@color/black_80"
+                android:textSize="@dimen/_10ssp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1.3"
+                android:background="@drawable/border_table_shape_blue"
+                android:fontFamily="@font/titilliumweb_bold"
+                android:padding="@dimen/_5sdp"
+                android:text="cubic weight"
+                android:textAllCaps="true"
+                android:textColor="@color/black_80"
+                android:textSize="@dimen/_10ssp" />
+
+            <TextView
+                android:id="@+id/txt_qubicweight"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.7"
+                android:background="@drawable/border_table_shape_blue"
+                android:fontFamily="@font/titilliumweb_bold"
+                android:padding="@dimen/_5sdp"
+                android:text="--"
+                android:textColor="@color/black_80"
+                android:textSize="@dimen/_10ssp" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1.3"
+                android:background="@drawable/border_table_shape_blue"
+                android:fontFamily="@font/titilliumweb_bold"
+                android:padding="@dimen/_5sdp"
+                android:text="dimension"
+                android:textAllCaps="true"
+                android:textColor="@color/black_80"
+                android:textSize="@dimen/_10ssp" />
+
+            <TextView
+                android:id="@+id/txt_dimention"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.7"
+                android:background="@drawable/border_table_shape_blue"
+                android:fontFamily="@font/titilliumweb_bold"
+                android:padding="@dimen/_5sdp"
+                android:text="--"
+                android:textColor="@color/black_80"
+                android:textSize="@dimen/_10ssp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1.3"
+                android:background="@drawable/border_table_shape_blue"
+                android:fontFamily="@font/titilliumweb_bold"
+                android:padding="@dimen/_5sdp"
+                android:text="DESCRIPTION"
+                android:textColor="@color/black_80"
+                android:textSize="@dimen/_10ssp" />
+
+            <TextView
+                android:id="@+id/txt_desription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.7"
+                android:background="@drawable/border_table_shape_blue"
+                android:fontFamily="@font/titilliumweb_bold"
+                android:padding="@dimen/_5sdp"
+                android:text="--"
+                android:textColor="@color/black_80"
+                android:textSize="@dimen/_10ssp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:visibility="gone"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1.3"
+                android:background="@drawable/border_table_shape_blue"
+                android:fontFamily="@font/titilliumweb_bold"
+                android:padding="@dimen/_5sdp"
+                android:text="status"
+                android:textAllCaps="true"
+                android:textColor="@color/black_80"
+                android:textSize="@dimen/_10ssp" />
+
+            <TextView
+                android:id="@+id/txt_status"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.7"
+                android:background="@drawable/border_table_shape_blue"
+                android:fontFamily="@font/titilliumweb_bold"
+                android:padding="@dimen/_5sdp"
+                android:text="--"
+                android:textColor="@color/black_80"
+                android:textSize="@dimen/_10ssp" />
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginBottom="30dp"
+            >
+
+            <Button
+                android:id="@+id/btn_submit"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_25sdp"
+                android:layout_gravity="center"
+                android:background="@drawable/btn_shape_black"
+                android:fontFamily="@font/titilliumweb_bold"
+                android:paddingLeft="@dimen/_10sdp"
+                android:paddingRight="@dimen/_10sdp"
+                android:text="OK"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_10ssp" />
+
+        </LinearLayout>
+
+        </LinearLayout>
+
+        </ScrollView>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/job_summry_popup"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:background="@drawable/border_blue_shape_white"
+        android:orientation="vertical"
+        android:padding="@dimen/_10sdp"
+        android:gravity="center"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="GREAT ! JOB IS COMPLETED"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:textSize="@dimen/_18sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Thank you"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:textSize="@dimen/_16sdp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="You will be now redirected to your accepted jobs"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:textSize="@dimen/_10sdp" />
+
+    </LinearLayout>
+
+</FrameLayout>
+    </LinearLayout>
+
+
+
+</RelativeLayout>

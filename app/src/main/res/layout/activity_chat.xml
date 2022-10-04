@@ -1,0 +1,160 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/bg_arrow"
+        android:layout_marginRight="@dimen/_30sdp"
+        android:scaleType="fitStart"
+        android:contentDescription="bg_arrow" />
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+    <include layout="@layout/toolbar_chat"/>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+
+            >
+
+
+        </RelativeLayout>
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <LinearLayout
+                android:id="@+id/emptyView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:visibility="gone"
+                >
+                <TextView
+                    android:id="@+id/txt_nodata"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="No Data Found"
+                    android:textColor="@color/black_80"
+                    android:textSize="@dimen/_14ssp"
+                    />
+
+            </LinearLayout>
+
+
+
+            <RelativeLayout
+                android:background="#44000000"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                >
+
+            <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+                android:id="@+id/refresh"
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:layout_above="@+id/rel_msg"
+                >
+            <com.evolution.quicktrack.util.RecyclerViewEmptySupport
+                android:id="@+id/recyclerview_manu"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                />
+
+            </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+
+
+
+
+            <RelativeLayout
+                android:id="@+id/rel_msg"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_35sdp"
+                android:orientation="horizontal"
+                android:layout_alignParentBottom="true"
+                android:padding="@dimen/_3sdp"
+                >
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_alignParentBottom="true"
+                    android:background="@drawable/chat_border_blue_shape_white"
+                    android:layout_toLeftOf="@+id/img_send">
+
+
+                <EditText
+                    android:id="@+id/edt_msg"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toLeftOf="@+id/img_pictur"
+                    android:hint="Type a message"
+                    android:textSize="@dimen/_12ssp"
+                    android:paddingRight="@dimen/_5sdp"
+                    android:paddingTop="@dimen/_5sdp"
+                    android:paddingBottom="@dimen/_5sdp"
+                    android:paddingLeft="@dimen/_8sdp"
+                    android:background="@drawable/chat_border_edit_shape_white"
+                    android:layout_margin="1dp"
+                    />
+
+                <ImageView
+                    android:id="@+id/img_pictur"
+                    android:layout_width="@dimen/_25sdp"
+                    android:layout_height="@dimen/_25sdp"
+                    android:src="@drawable/ic_chat_upload_file"
+                    android:padding="@dimen/_3sdp"
+                    android:layout_alignParentRight="true"
+                    android:contentDescription="ic_chat_upload_file" />
+                </RelativeLayout>
+                <ImageView
+                    android:id="@+id/img_send"
+                    android:layout_width="@dimen/_25sdp"
+                    android:layout_height="@dimen/_25sdp"
+                    android:src="@drawable/ic_chat_sent_mail"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:contentDescription="ic_chat_sent_mail" />
+
+
+            </RelativeLayout>
+
+
+
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+
+
+
+    </LinearLayout>
+
+</RelativeLayout>

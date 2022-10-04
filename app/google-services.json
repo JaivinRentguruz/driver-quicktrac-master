@@ -1,0 +1,115 @@
+{
+  "project_info": {
+    "project_number": "118568288193",
+    "firebase_url": "https://quicktrack-195507.firebaseio.com",
+    "project_id": "quicktrack-195507",
+    "storage_bucket": "quicktrack-195507.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:118568288193:android:667bde8f70977483",
+        "android_client_info": {
+          "package_name": "com.evolution.quicktrack"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "118568288193-a59n1fuvs5feapv6l6r8g8v3409nsv5q.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.evolution.quicktrack",
+            "certificate_hash": "43bb1369e5680516fc05b300fec2f3ba4b151e5f"
+          }
+        },
+        {
+          "client_id": "118568288193-jv1n4cd2g3c85nrbcq3ukq38eg0rro5i.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC9DX0YgOdCeDPnIR8aBkBMFUFVpOe-w4k"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "118568288193-jv1n4cd2g3c85nrbcq3ukq38eg0rro5i.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:118568288193:android:2713808bb02987b4",
+        "android_client_info": {
+          "package_name": "com.quicktrack"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "118568288193-pep76af80l9mlpck89d4b8hhc217dpsj.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.quicktrack",
+            "certificate_hash": "43bb1369e5680516fc05b300fec2f3ba4b151e5f"
+          }
+        },
+        {
+          "client_id": "118568288193-9t3grv49ojat3cg2pdcv976pb26jrcqr.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.quicktrack",
+            "certificate_hash": "ff8dd56d73c1d78f758a80e7aefe7ea97db56cf6"
+          }
+        },
+        {
+          "client_id": "118568288193-amrtkv1t065sgem72djo98tb9bk9k2b4.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.quicktrack",
+            "certificate_hash": "0ec735468024e824ce0a33925e8901d2ca4a5d74"
+          }
+        },
+        {
+          "client_id": "118568288193-jv1n4cd2g3c85nrbcq3ukq38eg0rro5i.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC9DX0YgOdCeDPnIR8aBkBMFUFVpOe-w4k"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "118568288193-jv1n4cd2g3c85nrbcq3ukq38eg0rro5i.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,200 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+<ImageView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:src="@drawable/main_bg"
+    android:scaleType="fitXY"
+    />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+    <include layout="@layout/toolbar_with_image"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/_20sdp"
+        android:paddingRight="@dimen/_20sdp">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/titilliumweb_bolditalic"
+            android:gravity="center"
+            android:text="WELCOME"
+            android:textColor="@color/black_80"
+            android:textSize="@dimen/_16ssp" />
+
+        <TextView
+            android:id="@+id/txt_driverName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/titilliumweb_bold"
+            android:gravity="center"
+
+            android:textColor="@color/black_80"
+            android:textSize="@dimen/_16ssp" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_minus3sdp"
+            android:layout_marginTop="@dimen/_minus3sdp"
+            android:fontFamily="@font/titilliumweb_bold"
+            android:gravity="center"
+            android:text="To"
+            android:textColor="@color/black_80"
+            android:textSize="@dimen/_14ssp" />
+
+        <TextView
+            android:id="@+id/txt_trackName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/titilliumweb_bold"
+            android:gravity="center"
+            android:text="TATA TRUCK"
+            android:textColor="@color/black_80"
+            android:textSize="@dimen/_16ssp" />
+
+
+        <Button
+            android:id="@+id/btn_verify"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:layout_marginRight="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:background="@drawable/login_button"
+            android:clickable="true"
+            android:fontFamily="@font/titilliumweb_bolditalic"
+            android:gravity="center_vertical|center"
+            android:text="Verify your truck"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="@dimen/_18ssp" />
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_90sdp"
+                android:layout_alignParentBottom="false"
+                android:layout_centerInParent="true"
+                android:src="@drawable/truck_welcome" />
+            <LinearLayout
+
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:gravity="center"
+                android:orientation="vertical">
+
+<!--
+                <LinearLayout
+                    android:id="@+id/liner_name"
+
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:gravity="center"
+
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_minus3sdp"
+                        android:fontFamily="@font/titilliumweb_bold"
+                        android:gravity="center"
+                        android:padding="0dp"
+                        android:text="Driver Name : "
+                        android:textColor="@color/black_80"
+                        android:textSize="@dimen/_14ssp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_minus3sdp"
+                        android:fontFamily="@font/titilliumweb_regular"
+                        android:gravity="center"
+                        android:padding="0dp"
+
+                        android:textColor="@color/black_60"
+                        android:textSize="@dimen/_16ssp" />
+
+
+                </LinearLayout>
+-->
+
+<!--
+            <LinearLayout
+                android:id="@+id/liner_time"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:gravity="center"
+                android:orientation="horizontal"
+
+                >
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/titilliumweb_bold"
+                    android:gravity="center"
+                    android:text="Start Time : "
+                    android:textColor="@color/black_80"
+                    android:textSize="@dimen/_14ssp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/titilliumweb_regular"
+                    android:gravity="center"
+                    android:text="05:11:28"
+                    android:textColor="@color/black_60"
+                    android:textSize="@dimen/_16ssp" />
+
+
+            </LinearLayout>
+-->
+
+
+
+            </LinearLayout>
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+    </LinearLayout>
+
+</RelativeLayout>
